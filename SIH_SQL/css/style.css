@@ -1,0 +1,137 @@
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.roboto{
+    font-family: 'Roboto';
+}
+.login-header{
+    min-height: 60px;
+}
+.logo-container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px;
+}
+.site-name{
+    color: #0aa;
+    font-size: 36px;
+}
+
+.form-container{
+    position: absolute;
+    top: calc(50% + 30px);
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 80vh;
+    width: 80vw;
+    background: none;
+    box-shadow: 0 2px 60px -24px rgba(0,0,0,1);
+    border-radius: 10px;
+}
+.sign-user{
+    background: linear-gradient(to bottom,rgb(0, 150, 137),rgb(0, 180, 180));
+    position: relative;
+    text-align: center;
+    padding: 80px 20px 20px;
+    
+}
+.border-rad-10-left{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.sign-user-container{
+    position: absolute;
+    height: calc(100% - 100px);
+    width: calc(100% - 40px);
+}
+.sign-user-container h1{
+    margin: 0;
+}
+.sign-user-container p{
+    font-size:14px;
+    width: 60%;
+    margin: 40px auto;
+}
+.sign-user-container-head-2{
+    /* position: absolute; */
+    /* bottom: 150px; */
+    /* left: 50%; */
+    margin-top: 55px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    /* transform: translateX(-50%); */
+}
+.sign-user-container button{
+    width: 190px;
+    left: 50%;
+    text-transform: uppercase;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 10px 40px;
+    background: #fff1;
+    color: white;
+}
+button:focus{
+    outline: none;
+}
+.user-form-container{
+    padding: 80px 40px 20px;
+}
+.form-carrier{
+    box-sizing:  border-box;
+}   
+.create-account{
+    font-size: 2.5rem;
+    color: #0bb;
+}
+.sign-user-form{
+    margin: 40px 20px 10px;
+    text-align: center;
+}
+.input-control{
+    font-family: roboto;
+    font-size: 16px;
+    color: #4b2354;
+    line-height: 1.2;
+    display: block;
+    width: 60%;
+    height: 62px;
+    background: 0 0;
+    padding: 0 20px 0 23px;
+    box-shadow: 0 3px 20px 0 rgba(0,0,0,.1);
+    border: none;
+    font-weight: bold;
+    margin: 0 auto;
+}
+.input-control::placeholder{
+    font-weight: 500;
+    color: rgb(138, 136, 136);
+}
+.border-radius-50{
+    border-radius: 50px;
+}
+input:focus{
+    outline: none !important;
+}
+.none{
+    display: none;
+}
+.submit{
+    cursor: pointer;
+    margin-top: 10px;
+    min-width: 200px;
+    height: 50px;
+    background: linear-gradient(to bottom,rgb(0, 150, 137),rgb(0, 180, 180));
+    border-radius: 100px;
+    font-family: roboto;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    line-height: 1.2;
+    text-transform: uppercase;
+    border:none;
+}
