@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile"
+    android:background="#fff">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#0079d6"
+        app:titleTextColor="#fff"
+        android:theme="@style/AppTheme"
+        app:title="Profile"
+        app:titleMarginStart="15dp"
+        app:navigationIcon="@drawable/back"
+        >
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/profileEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:text="Email"
+        android:textColor="#000"
+        />
+
+    <TextView
+        android:id="@+id/profileNameHolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="105dp"
+        android:text="Name"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/profileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profileEmail"
+        android:layout_toEndOf="@id/profileNameHolder"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="30dp"
+        android:hint="Name"
+        android:minWidth="200dp"
+        android:text=""
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:layout_toRightOf="@id/profileNameHolder"
+        android:layout_marginStart="85dp" />
+
+    <TextView
+        android:id="@+id/profileAddressHolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileNameHolder"
+        android:layout_marginTop="25dp"
+        android:text="Address"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/profileAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/profileName"
+        android:layout_toEndOf="@id/profileAddressHolder"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="25dp"
+        android:textSize="20sp"
+        android:hint="Address"
+        android:text=""
+        android:minWidth="200dp"
+        android:textColor="#000"
+        android:layout_toRightOf="@id/profileAddressHolder"
+        android:layout_marginStart="60dp" />
+
+    <TextView
+        android:id="@+id/profileNumberHolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileAddressHolder"
+        android:layout_marginTop="25dp"
+        android:text="Contact"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/profileNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/profileAddress"
+        android:layout_toEndOf="@+id/profileNumberHolder"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="25dp"
+        android:textSize="20sp"
+        android:hint="Number"
+        android:text=""
+        android:minWidth="200dp"
+        android:textColor="#000"
+        android:layout_toRightOf="@+id/profileNumberHolder"
+        android:layout_marginStart="60dp" />
+
+    <TextView
+        android:id="@+id/profileManagerHolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileNumberHolder"
+        android:layout_marginTop="25dp"
+        android:text="Manager"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:textColor="#000"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/profileManager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/profileNumber"
+        android:layout_toEndOf="@id/profileManagerHolder"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="25dp"
+        android:textSize="20sp"
+        android:hint="Manager"
+        android:text=""
+        android:minWidth="200dp"
+        android:textColor="#000"
+        android:layout_toRightOf="@id/profileManagerHolder"
+        android:layout_marginStart="45dp" />
+    <TextView
+        android:id="@+id/profileOrgHolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileManagerHolder"
+        android:layout_marginTop="25dp"
+        android:text="Org."
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:textColor="#000"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/profileOrganisation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/profileManager"
+        android:layout_toEndOf="@id/profileOrgHolder"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="30dp"
+        android:hint="Organiastion"
+        android:textSize="20sp"
+        android:text=""
+        android:minWidth="200dp"
+        android:textColor="#000"
+        android:layout_toRightOf="@id/profileOrgHolder"
+        android:layout_marginStart="90dp" />
+    <TextView
+        android:id="@+id/profileNOEHolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileOrgHolder"
+        android:layout_marginTop="25dp"
+        android:text="Employees"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:textColor="#000"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/profileNOE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/profileOrganisation"
+        android:layout_marginTop="25dp"
+        android:layout_toEndOf="@id/profileNOEHolder"
+        android:hint="No of Employees"
+        android:layout_marginLeft="25dp"
+        android:textSize="20sp"
+        android:text=""
+        android:minWidth="200dp"
+        android:textColor="#000"
+        android:layout_toRightOf="@id/profileNOEHolder"
+        android:layout_marginStart="25dp" />
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="82dp"
+        android:background="#0079d6"
+        android:elevation="4dp"
+        android:text="Edit"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffff" />
+    <!--<ProgressBar-->
+        <!--android:id="@+id/progressBar"-->
+        <!--android:layout_width="70dp"-->
+        <!--android:layout_height="70dp"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:elevation="5dp"-->
+        <!--android:layout_marginBottom="20dp"-->
+        <!--android:visibility="visible"-->
+        <!--android:theme="@style/AppTheme_WhiteAccent"/>-->
+</RelativeLayout>

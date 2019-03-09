@@ -1,0 +1,99 @@
+body{
+    height: 100%;
+    width: 100%;
+}
+button:focus{
+    outline: none;
+}
+*{
+    transition: none;
+}
+
+
+/************************************************ PreCompiled *****************************************************/
+.header {
+    background: linear-gradient(to top, #009689, #00b4b4); }
+  
+  .left-container {
+    background: linear-gradient(to top, #009689, #00b4b4); }
+  
+  .nav-list-links, .logo-text {
+    color: white; }
+  
+  .w-80 {
+    width: 80%; }
+  
+  .t-bigger {
+    font-size: 125%; }
+  
+  .notification {
+    color: #009696; }
+/*************************************************    Other    ******************************************************/
+.header{
+    width: 100%;
+    background-color: rgb(251,251,251);
+    min-height: 76px;
+    box-shadow: 0 4px 10px -7px black;
+}
+*{
+    font-family: roboto;
+}
+.logo-container,.nav-menu{
+    line-height: 80px;
+    margin: auto 0;
+}
+.nav-list{
+    list-style-type: none;
+}
+.logo-text{
+    font-size: 2.25rem;
+    font-weight: lighter;
+}
+.nav-list-item{
+    margin: 0 20px;
+}
+a:hover{
+    color: #eee;
+    text-decoration: none;
+}
+#logout{
+    background: transparent;
+    border:none;
+}
+#logout{
+    background: transparent;
+    border:none;
+} 
+
+
+
+.profile-form{
+    height: 80vh;
+    width: 50vw;
+    position: absolute;
+    overflow-y: auto; 
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0px 4px -1px rgba(0,0,0,.5);
+}
+.form-container{
+    height: 100%;
+    margin: 0 10%;
+}
+.top{
+    padding-top: 60px;
+    flex-basis: 90%;
+    width: 80%;
+    margin:  0 10%;
+}
+.bottom{
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: roboto;
+    flex-basis: 10%;
+    background: linear-gradient(to bottom,#0dd,#0aa);   
+    color: white;
+    padding: 10px 20px;
+}
